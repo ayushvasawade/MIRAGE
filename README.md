@@ -152,3 +152,78 @@ MediSphereAR/
 ├── /docs                # Design docs, research notes, and architecture
 ├── README.md            # This project description file
 └── package.json         # Backend dependencies and metadata
+
+# Usage (mri.py)
+
+1. Run the python script
+```bash
+python mri.py
+```
+
+2. We'll get the output as follow on terminal
+```bash
+#sample_output 
+# Extracted Measurements:
+
+#              Organ Component/Dimension  Size (cm) Blender Axis Medical Orientation
+# 0            Heart   Systolic Diameter        6.0  unspecified             unknown
+# 1           Atrium          Transverse        9.0       X-axis        mediolateral
+# 2           Septum         Unspecified        2.0  unspecified             unknown
+# 3  Ascending Aorta         Unspecified        1.0  unspecified             unknown
+
+# [Console Output]
+#           Organ Component/Dimension  Size (cm) Blender Axis Medical Orientation
+#           Heart   Systolic Diameter        6.0  unspecified             unknown
+#          Atrium          Transverse        9.0       X-axis        mediolateral
+#          Septum         Unspecified        2.0  unspecified             unknown
+# Ascending Aorta         Unspecified        1.0  unspecified             unknown
+
+# Blender Modeling Guide:
+
+# Blender Anatomical Modeling Guide:
+
+
+# Organ: Heart
+# Instructions:
+# 1. In Blender, press Shift + A → Mesh → UV Sphere (or Cube).
+# 2. Enter Edit Mode and scale the object along axes:
+#    - Size: 0.06 m (No specific axis identified)
+# 3. Label object as: heart
+
+
+# Organ: Atrium
+# Instructions:
+# 1. In Blender, press Shift + A → Mesh → UV Sphere (or Cube).
+# 2. Enter Edit Mode and scale the object along axes:
+#    - Scale along X-axis to 0.09 m for Transverse (Anatomical plane: mediolateral)
+# 3. Label object as: atrium
+
+
+# Organ: Septum
+# Instructions:
+# 1. In Blender, press Shift + A → Mesh → UV Sphere (or Cube).
+# 2. Enter Edit Mode and scale the object along axes:
+#    - Size: 0.02 m (No specific axis identified)
+# 3. Label object as: septum
+
+
+# Organ: Ascending Aorta
+# Instructions:
+# 1. In Blender, press Shift + A → Mesh → UV Sphere (or Cube).
+# 2. Enter Edit Mode and scale the object along axes:
+#    - Size: 0.01 m (No specific axis identified)
+# 3. Label object as: ascending_aorta
+
+
+# ✅ All files exported successfully.
+```
+
+Finally! Output:
+
+```bash
+/blender_modelling_guide.txt
+```
+
+```bash
+/organ_dimensions.json
+```

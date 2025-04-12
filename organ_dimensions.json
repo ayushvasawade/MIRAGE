@@ -1,0 +1,30 @@
+[
+    {
+        "Organ": "Heart",
+        "Component/Dimension": "Systolic Diameter",
+        "Size (cm)": 6.0,
+        "Blender Axis": "unspecified",
+        "Medical Orientation": "unknown"
+    },
+    {
+        "Organ": "Atrium",
+        "Component/Dimension": "Transverse",
+        "Size (cm)": 9.0,
+        "Blender Axis": "X-axis",
+        "Medical Orientation": "mediolateral"
+    },
+    {
+        "Organ": "Septum",
+        "Component/Dimension": "Unspecified",
+        "Size (cm)": 2.0,
+        "Blender Axis": "unspecified",
+        "Medical Orientation": "unknown"
+    },
+    {
+        "Organ": "Ascending Aorta",
+        "Component/Dimension": "Unspecified",
+        "Size (cm)": 1.0,
+        "Blender Axis": "unspecified",
+        "Medical Orientation": "unknown"
+    }
+]

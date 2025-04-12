@@ -1,0 +1,33 @@
+Blender Anatomical Modeling Guide:
+
+
+Organ: *Heart*
+Instructions:
+1. In Blender, press Shift + A  Mesh  UV Sphere (or Cube).
+2. Enter Edit Mode and scale the object along axes:
+   - Size: 0.06 m (No specific axis identified)
+3. Label object as: heart
+
+
+Organ: *Atrium*
+Instructions:
+1. In Blender, press Shift + A  Mesh  UV Sphere (or Cube).
+2. Enter Edit Mode and scale the object along axes:
+   - Scale along *X-axis* to *0.09 m* for Transverse (Anatomical plane: mediolateral)
+3. Label object as: atrium
+
+
+Organ: *Septum*
+Instructions:
+1. In Blender, press Shift + A  Mesh  UV Sphere (or Cube).
+2. Enter Edit Mode and scale the object along axes:
+   - Size: 0.02 m (No specific axis identified)
+3. Label object as: septum
+
+
+Organ: *Ascending Aorta*
+Instructions:
+1. In Blender, press Shift + A  Mesh  UV Sphere (or Cube).
+2. Enter Edit Mode and scale the object along axes:
+   - Size: 0.01 m (No specific axis identified)
+3. Label object as: ascending_aorta
