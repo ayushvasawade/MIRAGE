@@ -141,18 +141,6 @@ These exported simulations can be used to:
 
 ---
 
-## 📂 Suggested Project Folder Structure
-
-```plaintext
-MediSphereAR/
-├── /models              # Converted 3D anatomical models
-├── /frontend            # AR interface for Android/iOS
-├── /backend             # Node.js server and API
-├── /cloud               # AWS/GCP scripts and configuration
-├── /docs                # Design docs, research notes, and architecture
-├── README.md            # This project description file
-└── package.json         # Backend dependencies and metadata
-
 # Usage (mri.py)
 
 1. Run the python script
