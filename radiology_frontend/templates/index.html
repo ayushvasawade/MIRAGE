@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIRAGE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../static/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">MediSphereAR</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#presentation">Presentation</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        
+        <div class="overlay">
+            <h1>MediSphereAR</h1>
+        </div>
+        <section class="content">
+            <p>
+                <a class="hero-title" style="color: #38512f; margin-top: 6%;"> Augmented Reality for Accessible Medical Training & Surgery
+                </a>
+
+                    
+
+            </p>
+        </section>
+    </section>
+
+    <section class="about-us">
+        <div class="about-container">
+            <div class="about-content">
+                <h1 class="about-title">Empowering the Future of Surgery</h1>
+                <p class="about-description">
+                    At <strong>CadavAR</strong>, we blend cutting-edge technology with innovation to revolutionize
+                    medical procedures.
+                    Our advanced Augmented Reality solutions enhance surgical precision, training, and visualization,
+                    empowering healthcare professionals to save lives with confidence.
+                </p>
+                <div class="about-features">
+                    <div class="feature">
+                        <span class="feature-icon">🔬</span>
+                        <h3 class="feature-title">Precision</h3>
+                        <p class="feature-text">Enhance surgical accuracy with real-time AR guidance.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🎓</span>
+                        <h3 class="feature-title">Training</h3>
+                        <p class="feature-text">Revolutionize medical training with immersive AR simulations.</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">💡</span>
+                        <h3 class="feature-title">Innovation</h3>
+                        <p class="feature-text">Pioneering next-gen MedTech solutions for a better future.</p>
+                    </div>
+                </div>
+                <button class="btn-learn-more">Explore Our Solutions</button>
+            </div>
+            <!-- <div class="about-image">
+                <img src="../assets/Medical Care Logo .png" alt="CadavAR Preview Image">
+            </div> -->
+            
+        </div>
+    </section>
+
+    <div class="container">
+        <h1 style="text-align: center;">Radiology Report Processor</h1>
+        <form method="POST">
+            <label for="report">Enter Radiology Report:</label><br>
+            <textarea name="report" id="report" placeholder="Paste your radiology report here..." required></textarea><br>
+            <button type="submit">Process Report</button>
+        </form>
+
+        {% if measurements %}
+            <h2>Extracted Measurements</h2>
+            <div class="results">
+                {{ measurements|safe }}
+            </div>
+
+            <div class="downloads">
+                <h3>Download Outputs</h3>
+                <ul>
+                    <li><a href="{{ url_for('download_file', filename='organ_dimensions.json') }}" download>📥 organ_dimensions.json</a></li>
+                    <li><a href="{{ url_for('download_file', filename='blender_modeling_guide.txt') }}" download>📥 blender_modeling_guide.txt</a></li>
+                </ul>
+            </div>
+        {% endif %}
+
+        <div class="qr-codes">
+            <h3>AR QR Codes</h3>
+            {% for organ in organs_detected %}
+                <div class="qr-section">
+                    <p><strong>{{ organ }}</strong></p>
+                    <img src="{{ url_for('static', filename='qr/' + organ|lower|replace(' ', '_') + '_qr.png') }}" alt="{{ organ }} QR Code" width="150">
+                </div>
+            {% endfor %}
+        </div>
+        
+    </div>
+    <footer class="footer">
+        <section class="footer-links">
+            <!-- <div class="footer-column">
+                <video autoplay muted loop>
+                    <source src="{{ url_for('static', filename='static/assets/medsquarear.mp4') }}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div> -->
+            
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Blog Posts</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">User Guide</a></li>
+                    <li><a href="#">Support Center</a></li>
+                    <li><a href="#">Sustainability Tips</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <ul class="social-links">
+
+                    <li>
+                        <a href="https://www.twitter.com" target="_blank">
+                            <img src="assests/twitter.jpeg" alt="Twitter" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="assests/instagram.png" alt="Instagram" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com" target="_blank">
+                            <img src="assests/linkedin.webp" alt="LinkedIn" />
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><a href="#">Email Us</a></li>
+                    <li><a href="#">Call Us</a></li>
+                    <li><a href="#">Visit Us</a></li>
+                    <li><a href="#">Feedback Form</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="footer-bottom">
+            <div class="credits">
+                <p>© 2024 MIRAGE. All rights reserved.</p>
+                <div class="legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="script.js"></script>
+</body>
+
+</html>
