@@ -1,217 +1,262 @@
-# 🧠 MediSphereAR — Augmented Reality for Accessible Medical Training & Surgery
+# 🧠 MediSphereAR — Radiology Scan Interpretation & Augmented Reality Visualization
 
-## 🏥 Project Theme
-**HealthCare (Open Innovation)**
+
+
+MediSphereAR is a Python-powered radiology data extraction engine combined with Blender integration for 3D organ modeling and surgical simulation.
+
+
+
+The project is designed to assist in the automatic extraction of medical measurements from radiology reports and prepare the data for 3D visualization and AR-based surgical planning.
+
+
 
 ## 👨‍💻 Team Members
-- Aryaman Deepak Desai  
-- Rutuja Shashikant Raijadhav  
-- Ayush Arun Vasawde  
-- Siddhi Patil  
 
-Presented at **N.K. Orchid College of Engineering and Technology, Solapur**  
-Under **COMPUTER SCIENCE AND ENGINEERING STUDENTS ASSOCIATION (CSESA)**  
 
----
 
-## ❗ Current Problem
+* Aryaman Deepak Desai
 
-Modern medical education and surgical planning are heavily dependent on:
+* Rutuja Shashikant Raijadhav
 
-- Physical cadavers  
-- Expensive simulation platforms like **AnatomyX** (by CAE Simulations)
+* Ayush Arun Vasawde
 
-However, AnatomyX is:
-- 💸 Extremely costly: ₹6–7 Crores per unit  
-- 🎧 Requires Microsoft HoloLens (₹6–7 Lakhs) for VR access  
-- 📍 Scarce in availability — only 1 unit exists in Maharashtra  
+* Siddhi Patil
 
-This creates a major barrier for most medical institutions, particularly in developing regions.
 
----
 
-## 🔍 Problem Statement
+Presented at N.K. Orchid College of Engineering and Technology, Solapur
 
-The current reliance on high-cost virtual systems and physical cadavers makes modern medical training and surgical simulation inaccessible for the majority of educational and healthcare institutions. Hardware dependencies, such as the Microsoft HoloLens, further limit the scalability of these systems. This results in restricted exposure to advanced surgical practices and inhibits hands-on skill development for students and professionals.
 
----
 
-## ✅ Proposed Solution — MediSphereAR
+Under COMPUTER SCIENCE AND ENGINEERING STUDENTS ASSOCIATION (CSESA)
 
-**MediSphereAR** is a hardware-flexible, cost-effective **Augmented Reality platform** designed to:
 
-- Eliminate dependency on VR headsets and cadavers  
-- Run seamlessly on smartphones, tablets, and AR glasses  
-- Provide immersive and interactive surgical education and planning  
 
-### 🩺 Core Functionalities
+## 🚨 Problem Statement
 
-- 🧠 **Virtual Cadaver-less Dissection** using realistic 3D anatomical models  
-- 🩻 **Preoperative Surgical Simulations** anchored over real patient bodies  
-- 🦾 **Postoperative Complication Analysis** through detailed visualization  
-- 🧭 **Real-time Surgical Tracing & AR Guidance**  
-- 📤 **Export Patient-Specific Models** for remote collaboration and rehearsal  
-- 📚 **Reusable Models** for academic teaching and future references  
 
----
 
-## 🎯 Feature Spotlight — Patient-Specific Simulation Export
+Modern medical training and surgical planning heavily rely on:
 
-MediSphereAR allows the creation and export of **3D anatomical models** derived from:
 
-- CT scans  
-- MRI data  
-- X-ray imaging  
 
-These exported simulations can be used to:
+* Physical cadavers for anatomy studies
 
-- Plan and rehearse surgeries virtually  
-- Share with external doctors for collaborative procedures  
-- Guide intraoperative steps through AR anchoring  
-- Save for postoperative comparison and research  
+* Expensive simulation platforms such as AnatomyX (by CAE Simulations)
 
----
 
-## ⚖️ MediSphereAR vs AnatomyX
 
-| AnatomyX Limitations | MediSphereAR Solution |
-|----------------------|------------------------|
-| System cost ₹6–7 Cr | 💸 Software-based, runs on existing mobile/AR devices |
-| Requires ₹6–7 Lakhs HoloLens | ✅ Compatible with smartphones, tablets, and AR glasses |
-| Only one unit in Maharashtra | 🌍 Unlimited deployment across institutions |
-| Limited to anatomy visualization | 📌 Includes surgical rehearsal, tracing & postoperative analysis |
-| No model sharing | 📤 Patient-specific simulation export available |
+However, these solutions are:
 
----
 
-## ✨ Technical Implementation Overview
 
-### 🛠️ Development Workflow:
+* 💸 *Highly Costly*: AnatomyX systems cost ₹6–7 Crores per unit
 
-1. **Data Integration**  
-   - Convert CT/MRI/X-ray scans to 3D mesh models using DICOM processing  
-2. **AR Development**  
-   - Create immersive applications using **ARCore (Android)** and **ARKit (iOS)**  
-3. **Backend Setup**  
-   - Build REST APIs using **Node.js + Express**  
-4. **Cloud Integration**  
-   - Store and serve 3D models using **AWS** or **Google Cloud**  
-5. **Cross-Platform Optimization**  
-   - Ensure smooth performance across all AR-compatible devices  
+* ⚡ *Hardware-Dependent*: Require Microsoft HoloLens (~₹6–7 Lakhs)
 
----
+* 📍 *Limited Availability*: Only one such unit exists in Maharashtra
 
-## 📱 Applications Across Medical Fields
 
-| Specialty | Application |
-|----------|-------------|
-| 🧠 Neurosurgery | Brain surgery rehearsal and navigation |
-| 🦴 Orthopedics | Fracture visualization and joint replacements |
-| ❤️ Cardiac Surgery | Heart structure overlays and planning |
-| 🫁 General Surgery | Laparoscopic planning and simulation |
-| 👃 Plastic Surgery | Graft placement and facial reconstructions |
-| 🧬 Oncology | Tumor visualization and surgical rehearsal |
-| 🦷 Dental/Maxillofacial | Implant planning and jaw simulations |
 
----
+This makes advanced medical simulation tools inaccessible for a majority of educational institutions, especially in rural and resource-limited areas.
 
-## 🌍 Real-World Impact
 
-### ✅ Key Benefits:
 
-- **No Cadavers Needed** – Ideal for low-resource institutions  
-- **Increased Surgical Accuracy** – With detailed 3D anatomical views  
-- **Cost-Effective Learning** – Replace costly tools with accessible AR tech  
-- **Remote Collaboration Ready** – Exportable simulation models  
-- **Postoperative Insight** – Use archived models for aftercare and research  
-- **Scalable Deployment** – Roll out to any hospital or college instantly  
+## 💡 Our Solution — MediSphereAR
 
----
 
-## 🔚 Conclusion
 
-**MediSphereAR** transforms surgical education and planning by removing dependency on cadavers and proprietary VR hardware. By providing high-fidelity, patient-specific AR models accessible on affordable devices, MediSphereAR:
+MediSphereAR is a hardware-flexible, cost-effective Augmented Reality platform designed to:
 
-- Enables scalable and modern medical education  
-- Enhances surgical rehearsal and precision  
-- Reduces institutional costs  
-- Makes world-class training accessible in both urban and rural healthcare systems  
 
-> A future where immersive medical learning is in every student’s pocket is now a reality with MediSphereAR.
 
----
+* Eliminate reliance on VR headsets and physical cadavers.
 
-# Usage (mri.py)
+* Run smoothly on smartphones, tablets, and AR glasses.
 
-1. Run the python script
+* Generate realistic, patient-specific 3D anatomical models for surgical education, planning, and postoperative analysis.
+
+
+
+## 🚀 Project Overview
+
+
+
+This project focuses on processing CT and MRI scan reports to:
+
+
+
+* Extract critical anatomical measurements using Natural Language Processing.
+
+* Convert values to Blender units for 3D organ modeling and animations.
+
+* Prepare the extracted measurements for use in Augmented Reality (AR) surgical simulations.
+
+* Visualize extracted data via a web interface for validation and review.
+
+
+
+## 💡 Project Structure
+
+
+
 ```bash
+
+/radiology_frontend
+
+├── app.py                  # Main Flask application
+
+├── extract_engine.py       # NLP extraction logic for medical measurements
+
+├── templates/
+
+│   └── index.html          # Frontend HTML template
+
+├── static/
+
+│   └── styles.css          # Custom CSS for the web interface
+
+│   └── assets/
+
+│       └── medispherear.mp4  # Background video
+# ⚙ MediSphereAR – Installation & Usage Guide
+
+## 🚀 Installation & Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YourUsername/MediSphereAR.git
+cd radiology_frontend
+
+⚙ Installation & Setup
+Clone the repository:
+
+Bash
+
+git clone [https://github.com/YourUsername/MediSphereAR.git](https://github.com/YourUsername/MediSphereAR.git)
+cd radiology_frontend
+Install required dependencies:
+
+Bash
+
+pip install -r requirements.txt
+Run the Flask app:
+
+Bash
+
+python app.py
+Open your browser and visit:
+
+C++
+
+[http://127.0.0.1:5000/](http://127.0.0.1:5000/)
+🌐 Web Interface Usage
+Once the server is running, open the provided URL to access MediSphereAR's intuitive web platform:
+
+Upload Radiology Report: Drag & drop or select .txt or .pdf radiology report files.
+Trigger Measurement Extraction: Hit "Extract" to activate the backend parser.
+Review Output: Instant view of anatomical dimensions table formatted for Blender.
+Export Models: JSON files for direct use in Blender and AR platforms.
+🧠 Usage (mri.py)
+Run the extraction script:
+
+Bash
+
 python mri.py
-```
+You'll get the output as follows in the terminal:
 
-2. We'll get the output as follow on terminal
-```bash
-#sample_output 
+SQL
+
 # Extracted Measurements:
 
-#              Organ Component/Dimension  Size (cm) Blender Axis Medical Orientation
-# 0            Heart   Systolic Diameter        6.0  unspecified             unknown
-# 1           Atrium          Transverse        9.0       X-axis        mediolateral
-# 2           Septum         Unspecified        2.0  unspecified             unknown
-# 3  Ascending Aorta         Unspecified        1.0  unspecified             unknown
+             Organ Component/Dimension  Size (cm) Blender Axis Medical Orientation
+0            Heart   Systolic Diameter        6.0  unspecified             unknown
+1           Atrium          Transverse        9.0       X-axis        mediolateral
+2           Septum         Unspecified        2.0  unspecified             unknown
+3  Ascending Aorta         Unspecified        1.0  unspecified             unknown
+🗽 Console Output
+SQL
 
-# [Console Output]
-#           Organ Component/Dimension  Size (cm) Blender Axis Medical Orientation
-#           Heart   Systolic Diameter        6.0  unspecified             unknown
-#          Atrium          Transverse        9.0       X-axis        mediolateral
-#          Septum         Unspecified        2.0  unspecified             unknown
-# Ascending Aorta         Unspecified        1.0  unspecified             unknown
+          Organ Component/Dimension  Size (cm) Blender Axis Medical Orientation
+          Heart   Systolic Diameter        6.0  unspecified             unknown
+         Atrium          Transverse        9.0       X-axis        mediolateral
+         Septum         Unspecified        2.0  unspecified             unknown
+ Ascending Aorta         Unspecified        1.0  unspecified             unknown
+🧠 Blender Anatomical Modeling Guide
+Organ: Heart
 
-# Blender Modeling Guide:
+In Blender, press Shift + A → Mesh → UV Sphere (or Cube).
 
-# Blender Anatomical Modeling Guide:
+Enter Edit Mode and scale the object:
 
+Size: 0.06 m (No specific axis identified).
+Label object as: heart.
+Organ: Atrium
 
-# Organ: Heart
-# Instructions:
-# 1. In Blender, press Shift + A → Mesh → UV Sphere (or Cube).
-# 2. Enter Edit Mode and scale the object along axes:
-#    - Size: 0.06 m (No specific axis identified)
-# 3. Label object as: heart
+In Blender, press Shift + A → Mesh → UV Sphere (or Cube).
 
+Enter Edit Mode and scale:
 
-# Organ: Atrium
-# Instructions:
-# 1. In Blender, press Shift + A → Mesh → UV Sphere (or Cube).
-# 2. Enter Edit Mode and scale the object along axes:
-#    - Scale along X-axis to 0.09 m for Transverse (Anatomical plane: mediolateral)
-# 3. Label object as: atrium
+X-axis scale to 0.09 m for Transverse (Anatomical plane: mediolateral).
+Label object as: atrium.
+Organ: Septum
 
+In Blender, press Shift + A → Mesh → UV Sphere (or Cube).
 
-# Organ: Septum
-# Instructions:
-# 1. In Blender, press Shift + A → Mesh → UV Sphere (or Cube).
-# 2. Enter Edit Mode and scale the object along axes:
-#    - Size: 0.02 m (No specific axis identified)
-# 3. Label object as: septum
+Enter Edit Mode and scale:
 
+Size: 0.02 m (No specific axis identified).
+Label object as: septum.
+Organ: Ascending Aorta
 
-# Organ: Ascending Aorta
-# Instructions:
-# 1. In Blender, press Shift + A → Mesh → UV Sphere (or Cube).
-# 2. Enter Edit Mode and scale the object along axes:
-#    - Size: 0.01 m (No specific axis identified)
-# 3. Label object as: ascending_aorta
+In Blender, press Shift + A → Mesh → UV Sphere (or Cube).
 
+Enter Edit Mode and scale:
 
-# ✅ All files exported successfully.
-```
+Size: 0.01 m (No specific axis identified).
+Label object as: ascending_aorta.
+👉 All files exported successfully:
 
-Finally! Output:
+Bash
 
-```bash
 /blender_modelling_guide.txt
-```
-
-```bash
 /organ_dimensions.json
-```
+💡 Features
+💉 Automated Medical Text Extraction
+🗾 Clean Web Interface for uploading text and reviewing output
+🎮 Background Video Integration (assets/medispherear.mp4)
+🧠 Blender-Compatible Measurements
+🌐 Ready for AR Simulation Pipeline
+⚡ Exportable Patient-Specific JSON Files
+🔄 Cross-Platform Compatibility (supports Windows, Linux, macOS)
+🔍 Transparent Model Reuse for surgical planning and academic use
+🧠 Future Roadmap
+🔬 Phase 2: Automated rigging & Blender rendering for surgical scenes.
+🧠 Phase 3: AR integration for virtual surgery simulations.
+🌍 Real-World Applications
+Specialty	Application
+🧠 Neurosurgery	Brain surgery rehearsal and navigation
+🦴 Orthopedics	Fracture visualization and joint replacements
+❤ Cardiac Surgery	Heart structure overlays and planning
+🫁 General Surgery	Laparoscopic planning and simulation
+👃 Plastic Surgery	Graft placement and facial reconstructions
+🧬 Oncology	Tumor visualization and surgical rehearsal
+🦷 Dental/Maxillofacial	Implant planning and jaw simulations
+
+Export to Sheets
+🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change. 1    
+1.
+github.com
+github.com
+
+📝 License
+MIT License — Feel free to use and modify.
+
+🧠 Final Notes
+MediSphereAR is developed with the vision of bridging the gap between advanced medical visualization and accessibility. By lowering the entry barrier for radiological interpretation, 3D organ modeling, and AR-based surgical rehearsal, the project empowers both medical educators and surgeons worldwide.
+
+From automated text extraction to virtual anatomical modeling — MediSphereAR stands as a scalable, affordable alternative to traditional cadaver-based and high-cost VR systems.
+
+A future where immersive medical learning is in every student’s pocket is now a reality with MediSphereAR.
